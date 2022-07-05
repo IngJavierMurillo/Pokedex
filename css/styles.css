@@ -1,0 +1,138 @@
+/*================Cuerpo================*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: auto;
+	background: repeating-linear-gradient(rgb(145, 108, 163),rgb(228, 68, 122));
+}
+
+/*================Titulo================*/
+header{
+	display: flex;
+	padding: 2%;
+	background: transparent;
+	justify-content: center;
+}
+.Title{
+	font-family: cursive;
+	font-size: 4rem;
+}
+/*================Cartas================*/
+.Card{
+	padding: 0;
+	margin: 10%;
+	border: solid #FFF;
+	border-radius: 15px;
+}
+/*================Pokemon Img================*/
+.Img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 5%;
+	background: rgba(255, 255, 255, 0.8);
+}
+.Imag{
+	width: 100%;
+	height: auto;
+}
+/*================Pokemon Dat================*/
+.Txt{
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: rgba(255, 255, 255, 0.8);
+}
+.Item{
+	padding: 5% 0 0 5%;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 100%;
+	letter-spacing: 5px;
+	color: #000;
+}
+.Titlecard{
+	padding: 10% 0 10% 5%;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 100%;
+	letter-spacing: 3px;
+	color: #000;
+}
+.ContenedorTipo{
+	display: flex;
+	padding-bottom: 10%;
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.Tipo{
+	display: flex;
+	margin: 2.5%;
+	padding: 2.5% 2.5% 5% 2.5%;
+	width: 30%;
+	border: solid transparent;
+	border-radius: 10px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 100%;
+	letter-spacing: 3px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+}
+.Planta{
+	background: rgb(155, 204, 80);
+}
+.Veneno{
+	background: rgb(185, 127, 201);
+}
+.Fuego{
+	background: rgb(253, 125, 36);
+}
+.Volador{
+	background: linear-gradient(rgb(61, 199, 239),rgb(189, 185, 184));
+}
+.Agua{
+	background: rgb(69, 146, 196);
+}
+.Bicho{
+	background: rgb(114, 159, 63);
+}
+/*================Dispositivo================*/
+@media (min-width:  576px){
+	main{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows:;
+	}
+}
+@media (min-width:  768px){
+	main{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto auto;
+	}
+}
+@media (min-width:  992px){
+	main{
+		display: grid;
+		grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+		grid-template-rows: auto auto auto auto;
+	}
+}
+@media (min-width:  1024px){
+	main{
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: auto auto auto;
+	}
+}
+@media (min-width:  1200px){
+	main{
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: auto auto auto;
+	}
+}
